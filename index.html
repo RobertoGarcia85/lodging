@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta de Paz - Perquín | Alojamientos Turísticos reales en Morazán</title>
+    <!-- Google Fonts para una tipografía moderna y elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <!-- NOTIFICACIÓN DE ALERTA PERSONALIZADA (Escondida por defecto) -->
+    <div id="customAlert" class="custom-alert">
+        <span id="alertIcon" class="alert-icon">✨</span>
+        <div class="alert-body">
+            <h4 id="alertTitle">Notificación</h4>
+            <p id="alertMsg">Detalle del mensaje.</p>
+        </div>
+        <button class="alert-close" onclick="closeAlert()">×</button>
+    </div>
+
+    <!-- ==========================================
+         2. NAVBAR / CABECERA
+         ========================================== -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#hero" class="logo-container">
+                <span class="logo-icon">⛰️</span>
+                <span class="logo-text">Perquín<span>RutaDePaz</span></span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#servicios" class="nav-link">Alojamientos</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#contacto" class="nav-link">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         1. HERO SECTION
+         ========================================== -->
+    <section id="hero">
+        <div class="hero-content">
+            <span class="hero-badge">El Salvador Impresionante</span>
+            <h1>Descubre el Alma Verde de Morazán</h1>
+            <p>Clima fresco de montaña, senderos históricos, pinos susurrantes y el descanso que mereces en la hermosa Ruta de Paz, Perquín.</p>
+            <div class="hero-actions">
+                <a href="#servicios" class="btn btn-primary">Ver Alojamientos</a>
+                <a href="#contacto" class="btn btn-outline">Solicitar Reserva</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. SECCIÓN NOSOTROS (Descripción del Negocio)
+         ========================================== -->
+    <section id="nosotros">
+        <div class="container">
+            <div class="nosotros-wrapper">
+                <div class="nosotros-info">
+                    <span class="nosotros-tag">Bienvenidos a Perquín</span>
+                    <h2>Naturaleza, Clima de Altura e Historia Viva</h2>
+                    <p class="nosotros-text">
+                        Enclavado a más de 1200 metros sobre el nivel del mar en el departamento de Morazán, Perquín es el corazón indiscutible de la histórica <strong>Ruta de Paz</strong>. Un destino mágico de El Salvador donde la niebla matutina abraza los tupidos bosques de pino y roble, ofreciendo un clima fresco único.
+                    </p>
+                    <p class="nosotros-text">
+                        En esta cordillera no solo respiras aire puro; también conectas con la memoria histórica del país en el célebre <strong>Museo de la Revolución</strong> y te maravillas ante recursos ecológicos únicos como las aguas color turquesa del indomable <strong>Río Sapo</strong> y las vastas extensiones boscosas de <strong>Llano del Muerto</strong>.
+                    </p>
+                    
+                    <div class="nosotros-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌲</span>
+                            <div>
+                                <h4>Llano del Muerto</h4>
+                                <p>Un paraíso silvestre rodeado de bosques de pinos, cascadas y un entorno perfecto para acampar.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💦</span>
+                            <div>
+                                <h4>Río Sapo</h4>
+                                <p>Una de las joyas naturales más limpias de Centroamérica con asombrosas piscinas turquesas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nosotros-gallery">
+                    <img src="./src/assets/perquin_parque.jpg" alt="Paisaje del parque nacional de Perquín" class="nosotros-img">
+                    <div class="nosotros-overlay">
+                        <p>"Perquín te espera: un pueblo vivo entre montañas, con gente amable y su encanto pintoresco que invita a descubrir, descansar y disfrutar su auténtica esencia."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. SECCIÓN SERVICIOS (Catálogo de Alojamientos con Grid)
+         ========================================== -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestras Opciones de Alojamiento</h2>
+            <p class="section-subtitle">Descubre los hoteles y espacios naturales más icónicos de Perquín, diseñados para fundirse con la armonía de la montaña.</p>
+            
+            <div class="alojamientos-grid">
+                
+                <!-- ALOJAMIENTO 1: Perquín Lenca -->
+                <div class="alojamiento-card">
+                    <div class="card-img-wrapper">
+                        <img src="./src/assets/perkinlenca.jpg"alt="Hotel Perquín Lenca" class="card-img">
+                        <span class="card-badge">Hotel & Restaurante</span>
+                        <div class="card-price">Desde <span>$80</span> / noche</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hotel Perquín Lenca</h3>
+                        <p class="card-description">El pionero de la hospitalidad en la zona. Ofrece una espectacular inmersión de montaña con sus emblemáticas cabañas de madera, chimeneas de piedra y senderos privados rodeados de un denso bosque de pinos.</p>
+                        
+                        <h4 class="card-specs-title">Servicios Destacados</h4>
+                        <div class="card-amenities">
+                            <span class="amenity-tag">Chimenea de Piedra</span>
+                            <span class="amenity-tag">Restaurante Típico/Lenca</span>
+                            <span class="amenity-tag">Senderos Ecológicos</span>
+                            <span class="amenity-tag">Wi-Fi en Áreas Comunes</span>
+                            <span class="amenity-tag">Agua Caliente</span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="room-details">
+                                👤 Cabañas de 2 a 6 personas
+                            </div>
+                            <a href="#contacto" class="btn btn-card" onclick="prepararSeleccion('Hotel Perquín Lenca')">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ALOJAMIENTO 2: Llano del Muerto -->
+                <div class="alojamiento-card">
+                    <div class="card-img-wrapper">
+                        <img src="./src/assets/llanomuerto.JPG" alt="Cabañas Llano del Muerto" class="card-img">
+                        <span class="card-badge">Ecoturismo & Cabañas</span>
+                        <div class="card-price">Desde <span>$45</span> / noche</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cabañas & Camping Llano del Muerto</h3>
+                        <p class="card-description">Ubicado en el epicentro de la majestuosa reserva forestal Llano del Muerto. Desconéctate en acogedoras cabañas ecológicas rústicas o acampa directamente bajo las estrellas muy cerca de hermosas cascadas.</p>
+                        
+                        <h4 class="card-specs-title">Servicios Destacados</h4>
+                        <div class="card-amenities">
+                            <span class="amenity-tag">Área de Camping</span>
+                            <span class="amenity-tag">Pozas y Cascadas</span>
+                            <span class="amenity-tag">Cocina de Carbón</span>
+                            <span class="amenity-tag">Guía de Senderismo</span>
+                            <span class="amenity-tag">Admite Mascotas</span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="room-details">
+                                👤 Cabañas y Parcelas Libres
+                            </div>
+                            <a href="#contacto" class="btn btn-card" onclick="prepararSeleccion('Cabañas & Camping Llano del Muerto')">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ALOJAMIENTO 3: El Pericón -->
+                <div class="alojamiento-card">
+                    <div class="card-img-wrapper">
+                        <img src="./src/assets/pericon.jpg" alt="Hotel El Pericón" class="card-img">
+                        <span class="card-badge">Hotel de Montaña</span>
+                        <div class="card-price">Desde <span>$60</span> / noche</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hotel El Pericón</h3>
+                        <p class="card-description">Una opción sumamente pacífica y cómoda, ubicada a minutos del casco urbano de Perquín. Su arquitectura campestre y preciosos jardines llenos de orquídeas y flores silvestres lo convierten en un santuario del descanso.</p>
+                        
+                        <h4 class="card-specs-title">Servicios Destacados</h4>
+                        <div class="card-amenities">
+                            <span class="amenity-tag">Suites Acogedoras</span>
+                            <span class="amenity-tag">Jardines Exóticos</span>
+                            <span class="amenity-tag">Desayuno Incluido</span>
+                            <span class="amenity-tag">Estacionamiento Privado</span>
+                            <span class="amenity-tag">Área de Fogata</span>
+                        </div>
+                        
+                        <div class="card-footer">
+                            <div class="room-details">
+                                👤 Habitaciones Dobles y Triples
+                            </div>
+                            <a href="#contacto" class="btn btn-card" onclick="prepararSeleccion('Hotel El Pericón')">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECCIÓN EXTRA: CATÁLOGO DE IMÁGENES (Galería)
+         ========================================== -->
+    <section id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galería de la Ruta de Paz</h2>
+            <p class="section-subtitle">Imágenes reales de la asombrosa riqueza ecológica, histórica y de aventura que te espera en los rincones de Perquín.</p>
+            
+            <div class="gallery-grid">
+                <!-- Imagen 1 (Ancha) -->
+                <div class="gallery-item wide">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1200" alt="Amanecer en Perquín">
+                    <div class="gallery-overlay">
+                        <h3>Amanecer en Perquín</h3>
+                        <p>Los valles de Morazán cubiertos por la bruma matutina.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 2 (Alta) -->
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800" alt="Senderos de Perquín Lenca">
+                    <div class="gallery-overlay">
+                        <h3>Pinares de Perquín Lenca</h3>
+                        <p>Caminatas místicas entre densos senderos de pino y roble.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 3 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800" alt="Fogata en Llano del Muerto">
+                    <div class="gallery-overlay">
+                        <h3>Camping en Llano del Muerto</h3>
+                        <p>Noches inolvidables alrededor de la fogata bajo cielos estrellados.</p>
+                    </div>
+                </div>
+                
+                <!-- Imagen 4 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464454709131-ffd692ba94dd?auto=format&fit=crop&q=80&w=800" alt="Museo de la Revolución">
+                    <div class="gallery-overlay">
+                        <h3>Museo de la Revolución</h3>
+                        <p>Cultura, historia viva y testimonios de la Ruta de Paz.</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 5 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&q=80&w=800" alt="Jardines de El Pericón">
+                    <div class="gallery-overlay">
+                        <h3>Detalles Campestres</h3>
+                        <p>El encanto de las flores de montaña y los jardines de El Pericón.</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 6 (Ancha) -->
+                <div class="gallery-item wide">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1200" alt="Pozas turquesas del Río Sapo">
+                    <div class="gallery-overlay">
+                        <h3>El Majestuoso Río Sapo</h3>
+                        <p>Pozas de agua esmeralda totalmente limpias para un baño refrescante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. SECCIÓN FORMULARIO DE RESERVACIÓN (Con JS)
+         ========================================== -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title">Planea tu Escapada</h2>
+            <p class="section-subtitle">Completa el formulario y uno de nuestros asesores locales validará la disponibilidad en tu hotel seleccionado para coordinar los detalles.</p>
+            
+            <div class="booking-wrapper">
+                <!-- Panel de información -->
+                <div class="booking-info-panel">
+                    <div class="booking-info-header">
+                        <h2>Información de Contacto</h2>
+                        <p>¿Tienes dudas especiales sobre los accesos en vehículo, senderos o tarifas grupales en la zona? Estamos para ayudarte.</p>
+                    </div>
+                    
+                    <div class="booking-contact-details">
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">📞</span>
+                            <div class="detail-content">
+                                <h4>Teléfono / WhatsApp</h4>
+                                <p>+503 2680-1234</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">✉️</span>
+                            <div class="detail-content">
+                                <h4>Correo Electrónico</h4>
+                                <p>reservas@perquinrutadepaz.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">📍</span>
+                            <div class="detail-content">
+                                <h4>Oficina Central</h4>
+                                <p>Km 205, Avenida El Museo, Perquín, Morazán, El Salvador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario Interactivo -->
+                <div class="booking-form-panel">
+                    <form id="reservationForm" novalidate>
+                        <div class="form-grid">
+                            
+                            <!-- Nombre -->
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">Nombre Completo</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="Ej. Juan Pérez">
+                                <span class="error-message" id="nameError">El nombre debe tener al menos 3 caracteres.</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" id="email" class="form-control" placeholder="Ej. juan@correo.com">
+                                <span class="error-message" id="emailError">Por favor ingresa un correo electrónico válido.</span>
+                            </div>
+
+                            <!-- Teléfono -->
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Teléfono (con código)</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Ej. +503 7000-0000">
+                                <span class="error-message" id="phoneError">Ingresa un número telefónico válido (mínimo 8 dígitos).</span>
+                            </div>
+
+                            <!-- Selección de Alojamiento Real -->
+                            <div class="form-group">
+                                <label for="alojamientoSelect" class="form-label">Elige tu Destino</label>
+                                <select id="alojamientoSelect" class="form-control">
+                                    <option value="" disabled selected>-- Selecciona un alojamiento --</option>
+                                    <option value="Hotel Perquín Lenca">Hotel Perquín Lenca (Desde $80/noche)</option>
+                                    <option value="Cabañas & Camping Llano del Muerto">Cabañas & Camping Llano del Muerto (Desde $45/noche)</option>
+                                    <option value="Hotel El Pericón">Hotel El Pericón (Desde $60/noche)</option>
+                                </select>
+                                <span class="error-message" id="alojamientoError">Por favor selecciona una opción de alojamiento.</span>
+                            </div>
+
+                            <!-- Fecha de Ingreso -->
+                            <div class="form-group">
+                                <label for="checkIn" class="form-label">Fecha de Ingreso</label>
+                                <input type="date" id="checkIn" class="form-control">
+                                <span class="error-message" id="checkInError">La fecha de ingreso debe ser hoy o posterior.</span>
+                            </div>
+
+                            <!-- Fecha de Salida -->
+                            <div class="form-group">
+                                <label for="checkOut" class="form-label">Fecha de Salida</label>
+                                <input type="date" id="checkOut" class="form-control">
+                                <span class="error-message" id="checkOutError">La fecha de salida debe ser posterior al ingreso.</span>
+                            </div>
+
+                            <!-- Mensaje o requerimientos especiales -->
+                            <div class="form-group full-width">
+                                <label for="notes" class="form-label">Mensaje o Solicitud Especial</label>
+                                <textarea id="notes" class="form-control" placeholder="Ej. Deseo una cabaña con chimenea activa, o requiero espacio para camping, etc..."></textarea>
+                            </div>
+
+                            <div class="form-group full-width" style="margin-bottom: 0;">
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Solicitar Mi Reservación Ahora</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. FOOTER
+         ========================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Perquín, Ruta de Paz</h3>
+                    <p>Fomentamos el turismo de naturaleza responsable, el ecoturismo y la preservación de la memoria histórica comunitaria en el norte de Morazán, El Salvador.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="TripAdvisor">🦉</a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Secciones</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Alojamientos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Reservas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Información de Interés</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#nosotros">Reserva Río Sapo</a></li>
+                        <li><a href="#galeria">Llano del Muerto</a></li>
+                        <li><a href="#nosotros">Museo de la Revolución</a></li>
+                        <li><a href="#contacto">Cómo llegar desde San Salvador</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear"></span> Ruta de Paz - Perquín, Morazán. Todos los derechos reservados.
+                </p>
+                <p class="footer-credits">
+                    Desarrollado por <span>Programador Junior NodeJS / Frontend</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
