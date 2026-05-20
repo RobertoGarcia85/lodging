@@ -115,7 +115,7 @@
                 <!-- ALOJAMIENTO 1: Perquín Lenca -->
                 <div class="alojamiento-card">
                     <div class="card-img-wrapper">
-                        <img src="./src/assets/perkinlenca.jpg"alt="Hotel Perquín Lenca" class="card-img">
+                        <img src="/src/assets/perkinlenca.jpg" alt="Hotel Perquín Lenca" class="card-img">
                         <span class="card-badge">Hotel & Restaurante</span>
                         <div class="card-price">Desde <span>$80</span> / noche</div>
                     </div>
@@ -144,7 +144,7 @@
                 <!-- ALOJAMIENTO 2: Llano del Muerto -->
                 <div class="alojamiento-card">
                     <div class="card-img-wrapper">
-                        <img src="./src/assets/llanomuerto.JPG" alt="Cabañas Llano del Muerto" class="card-img">
+                        <img src="/src/assets/llanomuerto.JPG" alt="Cabañas Llano del Muerto" class="card-img">
                         <span class="card-badge">Ecoturismo & Cabañas</span>
                         <div class="card-price">Desde <span>$45</span> / noche</div>
                     </div>
@@ -173,7 +173,7 @@
                 <!-- ALOJAMIENTO 3: El Pericón -->
                 <div class="alojamiento-card">
                     <div class="card-img-wrapper">
-                        <img src="./src/assets/pericon.jpg" alt="Hotel El Pericón" class="card-img">
+                        <img src="/src/assets/pericon.jpg" alt="Hotel El Pericón" class="card-img">
                         <span class="card-badge">Hotel de Montaña</span>
                         <div class="card-price">Desde <span>$60</span> / noche</div>
                     </div>
@@ -211,59 +211,91 @@
             <h2 class="section-title">Galería de la Ruta de Paz</h2>
             <p class="section-subtitle">Imágenes reales de la asombrosa riqueza ecológica, histórica y de aventura que te espera en los rincones de Perquín.</p>
             
-            <div class="gallery-grid">
-                <!-- Imagen 1 (Ancha) -->
-                <div class="gallery-item wide">
-                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1200" alt="Amanecer en Perquín">
-                    <div class="gallery-overlay">
-                        <h3>Amanecer en Perquín</h3>
-                        <p>Los valles de Morazán cubiertos por la bruma matutina.</p>
+            <div class="carousel-container">
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide active">
+                            <img src="/src/assets/amanecer-perquin.jpg" alt="Amanecer en Perquín">
+                            <div class="carousel-caption">
+                                <span class="caption-tag">Paisaje Místico</span>
+                                <h3>Amanecer en Perquín</h3>
+                                <p>Los valles de Morazán cubiertos por la bruma matutina.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img src="/src/assets/caminatas-perquin.jpg" alt="Senderos de Perquín Lenca">
+                            <div class="carousel-caption">
+                                <span class="caption-tag">Aventura y Naturaleza</span>
+                                <h3>Pinares de Perquín Lenca</h3>
+                                <p>Caminatas místicas entre densos senderos de pino y roble.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img src="src/assets/camping.jpg" alt="Fogata en Llano del Muerto">
+                            <div class="carousel-caption">
+                                <span class="caption-tag">Ecoturismo</span>
+                                <h3>Camping en Llano del Muerto</h3>
+                                <p>Noches inolvidables alrededor de la fogata bajo cielos estrellados.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <img src="src/assets/museo.jpg" alt="Museo de la Revolución">
+                            <div class="carousel-caption">
+                                <span class="caption-tag">Historia y Cultura</span>
+                                <h3>Museo de la Revolución</h3>
+                                <p>Cultura, historia viva y testimonios de la Ruta de Paz.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="carousel-slide">
+                            <img src="src/assets/jardines-pericon.jpg" alt="Jardines de El Pericón">
+                            <div class="carousel-caption">
+                                <span class="caption-tag">Descanso y Paz</span>
+                                <h3>Detalles Campestres</h3>
+                                <p>El encanto de las flores de montaña y los jardines de El Pericón.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="carousel-slide">
+                            <img src="src/assets/rio-sapo.jpg" alt="Pozas turquesas del Río Sapo">
+                            <div class="carousel-caption">
+                                <span class="caption-tag">Paraíso Esmeralda</span>
+                                <h3>El Majestuoso Río Sapo</h3>
+                                <p>Pozas de agua esmeralda totalmente limpias para un baño refrescante.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Imagen 2 (Alta) -->
-                <div class="gallery-item tall">
-                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800" alt="Senderos de Perquín Lenca">
-                    <div class="gallery-overlay">
-                        <h3>Pinares de Perquín Lenca</h3>
-                        <p>Caminatas místicas entre densos senderos de pino y roble.</p>
-                    </div>
-                </div>
-                
-                <!-- Imagen 3 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800" alt="Fogata en Llano del Muerto">
-                    <div class="gallery-overlay">
-                        <h3>Camping en Llano del Muerto</h3>
-                        <p>Noches inolvidables alrededor de la fogata bajo cielos estrellados.</p>
-                    </div>
-                </div>
-                
-                <!-- Imagen 4 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1464454709131-ffd692ba94dd?auto=format&fit=crop&q=80&w=800" alt="Museo de la Revolución">
-                    <div class="gallery-overlay">
-                        <h3>Museo de la Revolución</h3>
-                        <p>Cultura, historia viva y testimonios de la Ruta de Paz.</p>
-                    </div>
+
+                    <!-- Botones de Navegación -->
+                    <button class="carousel-prev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-next" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
+                        </svg>
+                    </button>
                 </div>
 
-                <!-- Imagen 5 -->
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&q=80&w=800" alt="Jardines de El Pericón">
-                    <div class="gallery-overlay">
-                        <h3>Detalles Campestres</h3>
-                        <p>El encanto de las flores de montaña y los jardines de El Pericón.</p>
-                    </div>
-                </div>
-
-                <!-- Imagen 6 (Ancha) -->
-                <div class="gallery-item wide">
-                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1200" alt="Pozas turquesas del Río Sapo">
-                    <div class="gallery-overlay">
-                        <h3>El Majestuoso Río Sapo</h3>
-                        <p>Pozas de agua esmeralda totalmente limpias para un baño refrescante.</p>
-                    </div>
+                <!-- Indicadores (Puntos) -->
+                <div class="carousel-dots">
+                    <button class="carousel-dot active" data-index="0" aria-label="Ir a diapositiva 1"></button>
+                    <button class="carousel-dot" data-index="1" aria-label="Ir a diapositiva 2"></button>
+                    <button class="carousel-dot" data-index="2" aria-label="Ir a diapositiva 3"></button>
+                    <button class="carousel-dot" data-index="3" aria-label="Ir a diapositiva 4"></button>
+                    <button class="carousel-dot" data-index="4" aria-label="Ir a diapositiva 5"></button>
+                    <button class="carousel-dot" data-index="5" aria-label="Ir a diapositiva 6"></button>
                 </div>
             </div>
         </div>
